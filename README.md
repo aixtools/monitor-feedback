@@ -5,6 +5,10 @@ The only thing open here is **[Issues](../../issues)** — that is deliberate.
 
 If something in Monitor is wrong, confusing, missing, or just annoying: open an issue.
 
+**Prefer to talk? → [Discord](https://discord.gg/rybEwArwch)**
+Good for questions, "is this just me?", and anything you would rather not post in public.
+An issue is still better for a real bug — it does not scroll away.
+
 ---
 
 ## What Monitor is
@@ -71,5 +75,5 @@ edited or deleted.
 
 - **Not the code.** Monitor's source is not here and is not linked from here.
 - **Not support for EVE itself.** If you cannot log in to EVE, or ESI is down, that is CCP's side.
-- **Not a place for account problems.** Anything involving your tokens or your login belongs in a
-  private channel, not a public issue.
+- **Not a place for account problems.** Anything involving your tokens or your login belongs on
+  **[Discord](https://discord.gg/rybEwArwch)**, not in a public issue.
