@@ -1,0 +1,8 @@
+# Blank issues stay enabled: feedback, confusion and feature ideas are welcome and
+# should not have to fit the bug form.
+blank_issues_enabled: true
+contact_links:
+  - name: Discord — questions, "is this just me?", account or login trouble
+    url: https://discord.gg/rybEwArwch
+    about: Anything you would rather not post in public. Account and token problems belong here,
+      never in an issue.

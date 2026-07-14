@@ -1,0 +1,97 @@
+name: Bug report
+description: Something in Monitor is wrong, broken, or shows the wrong data.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔒 This issue will be PUBLIC
+
+        Anyone can read it — including people who are not in your alliance.
+
+        **Leave out** structure names and locations, jump routes, staging systems, asset values,
+        wallet balances, and anything from a URL after you sign in. **Crop or blur screenshots** —
+        item names, ISK figures and character names hide in the corners of a window.
+
+        If a detail does not change the bug, leave it out. We will ask if we need it.
+
+        Account or login trouble? Don't post it here — bring it to
+        [Discord](https://discord.gg/rybEwArwch).
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: Assets, Wallet, Industry, Orders, Market history, Skills, Planets, Mining, the
+        account page, the login flow…
+      placeholder: e.g. Industry
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, and what Monitor did instead of what you wanted.
+      placeholder: |
+        I opened Industry and sorted by Ends. A job that finished yesterday still says "Active".
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+      placeholder: It should say "Ready" once the job is deliverable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: |
+        Hugely helpful for anything visual. **Crop it first** — check the sidebar and the window
+        title before you drag it in.
+    validations:
+      required: false
+
+  - type: input
+    id: when
+    attributes:
+      label: Roughly when?
+      description: Only matters if the data looked stale or out of date — it tells us how old the
+        refresh was.
+      placeholder: e.g. this morning, about 09:00 EVE time
+    validations:
+      required: false
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Does it happen every time?
+      options:
+        - Every time
+        - Sometimes
+        - Saw it once
+        - Haven't tried again
+    validations:
+      required: false
+
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+      description: Browser, phone vs desktop, how many characters on the account — whatever seems
+        relevant. Guessing at a cause is welcome; being wrong costs nothing.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: opsec
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have left out structure names, locations, routes, ISK figures, and anything from
+            a signed-in URL — and my screenshot (if any) is cropped.
+          required: true
